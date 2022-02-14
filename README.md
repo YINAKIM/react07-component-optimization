@@ -21,3 +21,16 @@
 1. Performance탭 ) JS Heap사용량 확인가능
 2. React DevTools의 Profiles 탭 
 
+## 리액트 컴포넌트가 리렌더링 되는 상황
+1. 자신이 전달받은 props가 변경될 때 →부모컴포넌트의 state가 변경된 것
+2. 자신의 state가 바뀔 때
+3. 부모컴포넌트가 리렌더링될 때
+
+   → state가 바뀌지 않았더라도 리렌더링될 수 있음, 할머니의 state가 바뀌었나?
+
+   → 리액트 라이프사이클에서 shouldComponentUpdate가 실행되는 순간들?
+   >shouldComponentUpdate(nextProps, nextState)
+   props또는 state가 새로운 값으로 갱신되어서 렌더링이 발생하기 직전에 호출됨
+
+
+4. forceUpdate 함수가 실행될 때
