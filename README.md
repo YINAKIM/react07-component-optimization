@@ -9,9 +9,15 @@
 6. react-virtualized사용한 렌더링 최적화
 
 
-##리액트 컴포넌트 성능 최적화 대원칙
+## 리액트 컴포넌트 성능 최적화 대원칙
 >* 많은 컴포넌트가 C,U,D될 때 지연발생을 줄인다.
 >* 불필요한 렌더링을 없앤다.(클라이언트 자원을 효율적으로 사용하도록 함)
 
 
+## 모니터링하기 
+- 리액트 ~v16 : User Timing API사용하여 모니터링
+- 리액트 v17~ : React DevTools 사용하여 모니터링
+
+1. Performance탭 ) JS Heap사용량 확인가능
+2. React DevTools의 Profiles 탭 
 
